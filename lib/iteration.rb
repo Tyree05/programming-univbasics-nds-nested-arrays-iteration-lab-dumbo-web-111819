@@ -19,8 +19,8 @@ def join_ingredients(src)
 
   while cou_ter < ingridient_a.length do
     join_ingredients << "I love #{ingridient_a[cou_ter]} and #{ingridient_b[cou_ter]} on my pizza"
-   cou_ter +=1
   end
+  cou_ter +=1
 return join_ingredients
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
