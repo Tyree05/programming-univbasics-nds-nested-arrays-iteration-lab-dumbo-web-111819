@@ -14,14 +14,14 @@ def join_ingredients(src)
       end
       element_index += 1
     end
-   row_index +=1
+ row_index +=1
   end
-puts ingridient_a
+return ingridient_a
   while cou_ter < ingridient_a.length do
     join_ingredients << "I love #{ingridient_a[cou_ter]} and #{ingridient_b[cou_ter]} on my pizza"
   end
   cou_ter +=1
-return join_ingredients
+# return join_ingredients
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
   # Build a new Array that contains strings where each pair of foods is
