@@ -16,7 +16,7 @@ def join_ingredients(src)
     end
    row_index +=1
   end
-
+puts ingridient_a
   while cou_ter < ingridient_a.length do
     join_ingredients << "I love #{ingridient_a[cou_ter]} and #{ingridient_b[cou_ter]} on my pizza"
   end
