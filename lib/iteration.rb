@@ -7,18 +7,19 @@ def join_ingredients(src)
   while row_index < src.length do
     element_index = 0
     while element_index < src[row_index].length
-      if src[row_index] == 0 ##
+      if src[element_index] == 0 ##
         ingridient_a << src[element_index][row_index]
-      elsif src[row_index] == 1
-        ingridient_b << src[element_index][row_index]
       else
-        join_ingredients << "I love #{ingridient_a[element_index]} and#{ingridient_b[element_index]} on my pizza"
+        ingridient_b << src[element_index][row_index]
       end
       element_index += 1
     end
    row_index +=1
-  end
-  # join_ingredients << "I love #{ingridient_a[element_index]} and#{ingridient_b[element_index]} on my pizza"
+ end
+ # row_index = 0
+  while join_ingredients < ingridient_a.length && join_ingredients < ingridient_b.length do
+    join_ingredients << "I love #{ingridient_a[element_index]} and#{ingridient_b[element_index]} on my pizza"
+  end  
 return join_ingredients
   # Pizza_Lov << "I love " + src[element_index][row_index]+" and (inner array element 1) on my pizza
   #  As such, there should be a new String for each inner array, or pair"
