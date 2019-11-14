@@ -1,4 +1,28 @@
 def join_ingredients(src)
+  row_index = 0
+  join_ingredients = []
+  ingridient_a =[]
+  ingridient_b = []
+
+  while row_index < src.length do
+    element_index = 0
+    while element_index < src[row_index].length
+      if src[row_index] == 0 ##
+        ingridient_a << src[element_index][row_index]
+      elsif src[row_index] == 1
+        ingridient_b << src[element_index][row_index]
+      else
+        join_ingredients << "I love #{ingridient_a[element_index]} and#{ingridient_b[element_index]} on my pizza"
+      end
+      element_index += 1
+    end
+   row_index +=1
+  end
+  # join_ingredients << "I love #{ingridient_a[element_index]} and#{ingridient_b[element_index]} on my pizza"
+return join_ingredients
+  # Pizza_Lov << "I love " + src[element_index][row_index]+" and (inner array element 1) on my pizza
+  #  As such, there should be a new String for each inner array, or pair"
+
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
   # Build a new Array that contains strings where each pair of foods is
