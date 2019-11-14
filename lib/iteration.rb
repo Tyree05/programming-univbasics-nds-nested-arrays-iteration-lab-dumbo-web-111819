@@ -17,9 +17,9 @@ def join_ingredients(src)
    row_index +=1
  end
  # row_index = 0
-  while join_ingredients < ingridient_a.length && join_ingredients < ingridient_b.length do
+  while join_ingredients.length < ingridient_a.length && join_ingredients.length < ingridient_b.length do
     join_ingredients << "I love #{ingridient_a[element_index]} and#{ingridient_b[element_index]} on my pizza"
-  end  
+  end
 return join_ingredients
   # Pizza_Lov << "I love " + src[element_index][row_index]+" and (inner array element 1) on my pizza
   #  As such, there should be a new String for each inner array, or pair"
